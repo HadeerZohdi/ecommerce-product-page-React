@@ -37,7 +37,7 @@ nav ul li a:hover {
     border-bottom: 4px solid var(--orange);
 }
 
-.hidden {
+img.hidden {
     display: none;
 }
 
@@ -60,6 +60,13 @@ img.close {
         height: 100%;
         width: 70%;
         background-color: white;
+        transform: translateX(0);
+        transition: ease-in-out 0.6s;
+    }
+
+    nav.hidden {
+        transform: translateX(-1000px);
+        /* display: none; */
     }
 
     nav ul {

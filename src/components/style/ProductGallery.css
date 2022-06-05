@@ -7,13 +7,13 @@
 }
 
 .hero-img {
-    max-width: 450px;
+    max-width: 400px;
     border-radius: 15px;
     margin-bottom: 20px
 }
 
 .thumb {
-    max-width: 90px;
+    max-width: 70px;
     border-radius:  15px;
     cursor: pointer;
 }
@@ -33,11 +33,5 @@
 
     .thumb {
         max-width: 60px;
-    }
-}
-
-@media (min-width: 900px) and (max-width: 1200px) {
-    .thumb {
-        max-width: 70px;
     }
 }

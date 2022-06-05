@@ -7,27 +7,37 @@ import closeIcon from "../images/icon-close.svg";
 import Avatar from "../images/image-avatar.png";
 
 const Header = ({ products, cartItems, onAddItem, deleteItem }) => {
-  const [isNavShow, setIsNavShow] = useState(true);
+  const [hiddenNav, setHiddenNav] = useState(true);
 
   const menuShow = () => {
-    setIsNavShow(true);
+    setHiddenNav(true);
   };
 
   const closeMenu = () => {
-    setIsNavShow(false);
+    setHiddenNav(false);
   };
+
+  window.addEventListener("resize", function (event) {
+    if (window.innerWidth < 900) {
+      setHiddenNav(false);
+    } else {
+      setHiddenNav(true);
+    }
+  });
 
   return (
     <header>
       <div className="mainmenu">
         <img
-          className={`menu-icon ${isNavShow ? "hidden" : ""}`}
+          className={`menu-icon ${hiddenNav ? "hidden" : ""}`}
           src={menuIcon}
           alt="menu"
           onClick={menuShow}
         />
+
         <img src={Logo} alt="sneakers logo" />
-        <nav className={`${!isNavShow ? "hidden" : ""}`}>
+
+        <nav className={`${!hiddenNav ? "hidden" : ""}`}>
           <ul>
             <img
               className="hidden close"

@@ -1,15 +1,15 @@
 
 .container {
-  margin: 0 250px;
+  margin: 0 200px;
   position: relative;
 }
 
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 80px 50px 0 50px;
 }
 
 
@@ -17,11 +17,18 @@ main .gallery {
   max-width: 50%;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    margin: 0 300px;
+  }
+}
+
 @media (min-width: 900px) and (max-width: 1200px) {
   .container {
     margin: 0 25px;
   }
 }
+
 
 @media (max-width: 900px) {
   .container {
