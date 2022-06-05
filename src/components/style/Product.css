@@ -1,0 +1,157 @@
+
+.product-details-description {
+    padding: 0 100px;
+}
+
+@media (max-width: 900px) {
+    .product-details-description {
+        padding: 25px;
+    }
+}
+
+.product-details-description .product-name {
+    color: var(--orange);
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.product-details-description h1 {
+    font-size: 40px;
+    color: var( --very-dark-blue);
+    margin-top: 10px;
+}
+
+.product-details-description .product-description {
+    line-height: 1.6;
+    color: var(--dark-grayish-blue);
+    margin: 20px 0;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+
+.price .price-current-discount {
+    display: flex;
+    align-items: center;
+}
+
+.price .current-price {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.price .old-price {
+    color: var(--grayish-blue);
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+.price .discount {
+    color: var(--orange);
+    background-color: var(--pale-orange);
+    padding: 3px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-left: 25px
+}
+
+.hidden {
+    display: none;
+}
+
+.buttouns {
+    display: flex;
+}
+
+
+.buttouns .increment-controls {
+    padding: 5px;
+    width: 150px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 900px) {
+    .price {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .buttouns {
+        flex-direction: column;
+    }
+
+    .buttouns .increment-controls {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .product-details-description h1 {
+        font-size: 30px;
+    }
+}
+
+
+.increment-controls button{
+    color: var(--orange);
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.increment-controls button:hover {
+    color: hsl(26, 99%, 69%);
+}
+
+button.add-to-card {
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    border: none;
+    background-color: var(--orange);
+    color: white;
+    margin-left: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+
+button.add-to-card:hover {
+    background-color: hsl(26, 99%, 69%);
+}
+
+@media (max-width: 900px) {
+    button.add-to-card {
+        padding: 15px 0;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+button.add-to-card img {
+    margin-right: 20px;
+}
+
+button.add-to-card svg {
+    fill: white;
+}
+
+p.error-msg {
+    color: red;
+    font-weight: 600;
+    margin-top: 5px;
+}

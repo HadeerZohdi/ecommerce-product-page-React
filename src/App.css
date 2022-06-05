@@ -1,0 +1,40 @@
+
+.container {
+  margin: 0 250px;
+  position: relative;
+}
+
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+
+main .gallery {
+  max-width: 50%;
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .container {
+    margin: 0 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    margin: 0;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  main .gallery {
+    max-width: 100%;
+  }
+
+}
